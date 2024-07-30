@@ -92,6 +92,11 @@ public class SettingsMenuDialog extends SettingsDialog{
 		menu.row();
 		menu.addButton("$text.settings.language", ui.language::show);
 
+		// texturepack button
+		menu.row();
+		menu.addButton("Texturepack", ui.language::show);
+
+
 		prefs.clearChildren();
 		prefs.add(menu);
 
