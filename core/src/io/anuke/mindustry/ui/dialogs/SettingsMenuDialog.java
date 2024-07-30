@@ -7,6 +7,7 @@ import com.badlogic.gdx.utils.Align;
 import io.anuke.mindustry.Vars;
 import io.anuke.mindustry.core.GameState.State;
 import io.anuke.mindustry.net.Net;
+import io.anuke.mindustry.ui.fragments.LoadingFragment;
 import io.anuke.ucore.core.Core;
 import io.anuke.ucore.core.Graphics;
 import io.anuke.ucore.core.Settings;
@@ -94,8 +95,7 @@ public class SettingsMenuDialog extends SettingsDialog{
 
 		// texturepack button
 		menu.row();
-		menu.addButton("Texturepack", ui.language::show);
-
+		menu.addButton("Texturepack", ui.texture::show);
 
 		prefs.clearChildren();
 		prefs.add(menu);

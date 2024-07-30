@@ -48,6 +48,7 @@ public class UI extends SceneModule{
 	public BansDialog bans;
 	public AdminsDialog admins;
 	public TraceDialog traces;
+	public TexturePackDialog texture;
 
 	public final MenuFragment menufrag = new MenuFragment();
     public final ToolFragment toolfrag = new ToolFragment();
@@ -150,6 +151,7 @@ public class UI extends SceneModule{
 		load = new LoadDialog();
 		levels = new LevelDialog();
 		language = new LanguageDialog();
+		texture = new TexturePackDialog();
 		settings = new SettingsMenuDialog();
 		paused = new PausedDialog();
 		about = new AboutDialog();
