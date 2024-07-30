@@ -6,6 +6,14 @@
 ##
 ##############################################################################
 
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+source $DIR/local.properties 2>/dev/null
+
+if ! [ -z "$javaHome" ]
+then
+  JAVA_HOME=$javaHome
+fi
+
 # Attempt to set APP_HOME
 # Resolve links: $0 may be a link
 PRG="$0"
